@@ -9,6 +9,7 @@ var gameData = {
 function processMail() {
     gameData.mail += gameData.mailPerClick
     document.getElementById("mailProcessed").innerHTML = gameData.mail + " Mails processed"
+    totalMailCount()
 }
 
 function totalMailCount() {
@@ -27,7 +28,6 @@ function buyMailPerClick() {
 }
 
 var mainGameLoop = window.setInterval(function() {
-	totalMailCount() 
   }, 1000)
 
   var saveGameLoop = window.setInterval(function() {
