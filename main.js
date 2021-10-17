@@ -28,7 +28,7 @@ function totalMailCount() {
   document.getElementById("totalMailProcessed").innerHTML = gameData.totalMail + " Total mails processed"
 }
 
-//lets you buy upgrades that double your mailprocessing power (payed my mails)
+//lets you buy upgrades that double your mailprocessing power (payed by mails)
 function buyMailPerClick() {
 	if (gameData.mail >= gameData.mailPerClickCost){
 		gameData.mail -= gameData.mailPerClickCost
@@ -41,7 +41,7 @@ function buyMailPerClick() {
 
 /*var mainGameLoop = window.setInterval(function() {
   }, 1000)*/
-
+// saves gameData to a json file on a set interval (autosave)
   var saveGameLoop = window.setInterval(function() {
 	localStorage.setItem("IncremailsSave", JSON.stringify(gameData))
   }, 1000)
