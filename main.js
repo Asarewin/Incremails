@@ -27,8 +27,8 @@ function buyMailPerClick() {
 	}
 }
 
-var mainGameLoop = window.setInterval(function() {
-  }, 1000)
+/*var mainGameLoop = window.setInterval(function() {
+  }, 1000)*/
 
   var saveGameLoop = window.setInterval(function() {
 	localStorage.setItem("IncremailsSave", JSON.stringify(gameData))
