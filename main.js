@@ -3,7 +3,7 @@ var gameData = {
     mail: 0,
     totalMail: 0,
     mailPerClick : 1,
-	mailPerClickCost : 10,
+	mailPerClickCost : 10
 }
 
 window.onload = loadsave()
