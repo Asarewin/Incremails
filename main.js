@@ -1,6 +1,7 @@
 var gameData = {
 
     mail: 0,
+    totalMail: 0,
     mailPerClick : 1,
 	mailPerClickCost : 10
 }
@@ -8,6 +9,11 @@ var gameData = {
 function processMail() {
     gameData.mail += gameData.mailPerClick
     document.getElementById("mailProcessed").innerHTML = gameData.mail + " Mails processed"
+}
+
+function totalMailCount() {
+  gameData.mail += gameData.totalMail
+  document.getElementById("totalMailProcessed").innerHTML = gameData.totalMail + "Total mails processed"
 }
 
 function buyMailPerClick() {
