@@ -12,7 +12,7 @@ function processMail() {
 }
 
 function totalMailCount() {
-  gameData.mail += gameData.totalMail
+  gameData.totalMail += gameData.mail
   document.getElementById("totalMailProcessed").innerHTML = gameData.totalMail + "Total mails processed"
 }
 
